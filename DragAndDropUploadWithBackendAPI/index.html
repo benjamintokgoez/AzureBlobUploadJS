@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Upload File to Blob</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs-dom/7.0.3/rx.dom.js"></script>
+    <script src="./resumableUpload.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form class="box" action="" enctype="multipart/form-data">
+        <div class="box__input">
+            <label for="file">
+                <span class="box__dragndrop">drag and drop a file</span>.
+            </label>
+        </div>
+        <div id="output" class="hidden">
+            <strong>File properties:</strong>
+            <br />
+            <p>
+                Name: <span id="fileName"></span>
+            </p>
+            <p>
+                File size: <span id="fileSize"></span>bytes.
+            </p>
+            <p>
+                File type: <span id="fileType"></span>
+            </p>
+            <div id="progress">
+                <p>
+                    <strong>Progress</strong>: <span id="fileUploadProgress">0.00 %</span>
+                </p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

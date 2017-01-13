@@ -1,0 +1,28 @@
+﻿.box {
+		font-size: 1.25rem;
+		text-align: center;
+		background-color: #c8dadf;
+		position: relative;
+		padding: 100px 20px;
+	}
+	
+	.box__dragndrop {
+		display: none;
+	}
+	
+	.box.has-advanced-upload {
+		background-color: white;
+		outline: 2px dashed black;
+		outline-offset: -10px;
+	}
+	.box.has-advanced-upload .box__dragndrop {
+		display: inline;
+	}
+	
+	.box.is-dragover {
+		background-color: grey;
+	}
+	
+	.hidden {
+		display: none;
+	}
